@@ -1,6 +1,8 @@
 import { ContainerScroll } from "@/components/global/container-scroll-animation";
+import { InfiniteMovingCards } from "@/components/global/infinite-moving-cards";
 import Navbar from "@/components/global/navbar";
 import { Button } from "@/components/ui/button";
+import { clients } from "@/lib/constant";
 import Image from "next/image";
 
 export default function Home() {
@@ -23,7 +25,7 @@ export default function Home() {
                     Start For Free Today
                   </span>
                 </Button>
-                <h1 className="text-5xl md:text-8xl  bg-clip-text text-transparent bg-gradient-to-b from-white to-neutral-600 font-sans font-bold">
+                <h1 className="text-5xl md:text-8xl  bg-clip-text text-transparent bg-gradient-to-b from-white to-neutral-600 font-sans font-bold md:mb-20">
                   Automate Your Work With Proauctomatic
                 </h1>
               </div>
@@ -34,6 +36,15 @@ export default function Home() {
 
 
       </section>
+
+      <InfiniteMovingCards
+        className="md:mt-[35rem] mt-[125px]"
+        items={clients}
+        direction="right"
+        speed="slow"
+      />
+
+
 
     </main>
   );
