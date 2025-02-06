@@ -8,7 +8,7 @@ import { ThemeProvider } from "@/providers/theme-provider";
 const font = DM_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Proactomatization",
+  title: "Proauctomatic",
   description: "Developed by NachoDev",
 };
 
