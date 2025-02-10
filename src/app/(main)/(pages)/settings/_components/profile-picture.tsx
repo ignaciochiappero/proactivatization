@@ -33,8 +33,11 @@ const ProfilePicture = ({ userImage, onDelete, onUpload }: Props) => {
                 src={userImage}
                 alt="User_Image"
                 fill
+                style={{ objectFit: "contain" }}
               />
             </div>
+
+
             <Button
               onClick={onRemoveProfileImage}
               className="bg-transparent text-white/70 hover:bg-transparent hover:text-white"
